@@ -1,6 +1,6 @@
 "use client"
 
-import Redirect2Services from "../redirects/redirect-services"
+
 import { useRouter } from "next/navigation"
 export default function  Hero(){
     const router=useRouter()

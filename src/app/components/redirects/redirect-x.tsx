@@ -1,8 +1,8 @@
 
 
 "use client"
-import { div } from "framer-motion/client"
-import { Facebook, Twitter } from "lucide-react"
+
+import {  Twitter } from "lucide-react"
 import { useRouter } from "next/navigation"
 type Route2Props = {
     url: string

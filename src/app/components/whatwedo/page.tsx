@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image';
-import { PartyPopper } from 'lucide-react'
+
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import Route2Explore from '../redirects/redirect-explore';
 import RedirectButton from '../redirects/redirect-button';

@@ -1,6 +1,6 @@
 "use client"
 import Navbar from "../navbar/page";
-import { Card, CardContent, CardHeader, CardFooter } from "@/components/ui/card"
+import { Card, CardContent, CardHeader } from "@/components/ui/card"
 
 import {useRouter} from "next/navigation"
 import Footer from "../footer/page";

@@ -1,6 +1,5 @@
 "use client"
-import Image from "next/image";
-import { MoveRight } from "lucide-react";
+
 
 export default function Working() {
   return (

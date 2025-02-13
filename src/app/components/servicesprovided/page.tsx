@@ -1,4 +1,4 @@
-import { h1 } from "motion/react-client";
+
 import Navbar from "../navbar/page";
 import Image from "next/image"
 import Route2Explore from "../redirects/redirect-explore";
