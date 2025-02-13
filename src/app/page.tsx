@@ -1,5 +1,5 @@
 
-import {AutoPlayVideo} from "./components/vid/page";
+import AutoPlayVideo from "./components/vid/page";
 import Navbar from "./components/navbar/page";
 import Hero from "./components/hero/page";
 import ConductedEvents from "./components/whatwedo/page";
