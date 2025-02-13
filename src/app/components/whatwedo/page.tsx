@@ -64,7 +64,7 @@ export default function ConductedEvents() {
                                         Enhance harmony and prosperity with expert Vastu consultation. Optimize your surroundings for positive energy, balance, and success.
                                     </p>
                                     <div className="flex flex-wrap items-center justify-center gap-2">
-                                        <Route2Explore url="/components/explorevastu"></Route2Explore>
+                                        <Route2Explore url="./components/explorevastu"></Route2Explore>
                                         <RedirectButton url="https://calendly.com/devanshwalecha93"></RedirectButton>
                                     </div>
 
@@ -266,7 +266,7 @@ export default function ConductedEvents() {
                 <div className='font-inter md:hidden'>
                     <div className=" flex items-center justify-center">
 
-                        <p className="text-4xl  max-sm:text-2xl max-sm:items-center max-sm:justify-center max-sm:ml-[1.5rem] max-sm:mr-[1.5rem]  font-bold text-[#234969]  mt-[10.5rem] tracking-[0.015em]">Importance of Antarrdriishtie </p>
+                        <p className="text-4xl  max-sm:text-2xl max-sm:items-center max-sm:justify-center max-sm:ml-[2rem] max-sm:mr-[1.5rem]  font-bold text-[#234969]  mt-[10.5rem] tracking-[0.015em]">Importance of Antarrdriishtie </p>
                     </div>
                     <div className="flex items-center justify-center">
                         <p className=" text-[#7d94ab] mb-2 md:mb-4 max-sm:mb-2  text-xl">Glad you asked !</p>

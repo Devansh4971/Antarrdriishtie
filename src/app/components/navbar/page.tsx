@@ -43,10 +43,10 @@ export default function Navbar(){
                                     <Route2Page url="/components/aboutus" label="About us" />
                                 </div>
                                 <div className="block text-xl  hover:text-blue-500 text-[#234969]">
-                                    <Route2Page url="/components/ServiceProvided" label="Services Provided" />
+                                    <Route2Page url="/components/servicesprovided" label="Services " />
                                 </div>
                                 <div className="block text-xl  hover:text-blue-500 text-[#234969]">
-                                    <Route2Page url="/components/Pricing" label="Team Members" />
+                                    <Route2Page url="/components/Pricing" label="Pricing" />
                                 </div>
                                 <div className="block text-xl  hover:text-blue-500 text-[#234969]">
                                     <Route2Page url="/components/testimonials" label="Testimonials" />

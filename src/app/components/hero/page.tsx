@@ -25,7 +25,7 @@ export default function  Hero(){
                         <p className="text-[3.75rem] xs:text-[2.75rem ]  font-bold text-[#234969] ml-[15rem] mt-[17.5rem] tracking-[0.015em]">Antarrdriishtie</p>
                     </div>
                     <div className="xs:ml-[15rem] xs:wrap">
-                        <p className="text-[3.75rem] xs:text-[2.75rem ] font-bold text-[#234969] mt-[14px] tracking-[0.015em]">Mapping Your Spiritual Destiny</p>
+                        <p className="text-[3.75rem] max-sm:ml-[2.5rem] max-sm:text-[2.75rem] font-bold text-[#234969] mt-[14px] tracking-[0.015em]">Mapping Your Spiritual Destiny</p>
                     </div>
 
                     <p className="ml-[10.5rem] mt-[1.25rem] text-[#6c86a0]">Antarrdriishtie bridges centuries of Vedic wisdom with contemporary needs.</p>
