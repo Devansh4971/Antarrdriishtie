@@ -83,8 +83,10 @@ export default function ConductedEvents() {
                                     <p className="text-gray-600 dark:text-gray-300 mb-2 text-lg">
                                         Unlock the power of Vedic astrology with expert Jyotish consultation. Gain clarity, guidance, and solutions for a prosperous life.
                                     </p>
-                                    <Route2Explore url="/components/explorejyotish"></Route2Explore>
-                                    <RedirectButton url="https://calendly.com/devanshwalecha93"></RedirectButton>
+                                    <div className='flex flex-wrap items-center justify-center gap-2'>
+                                        <Route2Explore url="/components/explorejyotish"></Route2Explore>
+                                        <RedirectButton url="https://calendly.com/devanshwalecha93"></RedirectButton>
+                                    </div>
                                         
 
                                     
@@ -112,8 +114,10 @@ export default function ConductedEvents() {
                                     <p className="text-gray-600 dark:text-gray-300 mb-2 text-lg">
                                         Experience the spiritual benefits of authentic Rudraksha. Get expert consultation to choose the right bead for protection and well-being.
                                     </p>
-                                    <Route2Explore url="/components/explorerudra"></Route2Explore>
-                                    <RedirectButton url="https://calendly.com/devanshwalecha93"></RedirectButton>
+                                    <div className='flex flex-wrap items-center justify-center gap-2'>
+                                        <Route2Explore url="/components/explorerudra"></Route2Explore>
+                                        <RedirectButton url="https://calendly.com/devanshwalecha93"></RedirectButton>
+                                    </div>
 
                                 </div>
                                 <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl duration-300 ease-in-out">
@@ -130,8 +134,12 @@ export default function ConductedEvents() {
                                     <p className="text-gray-600 dark:text-gray-300 mb-2 text-lg">
                                         Discover insights and guidance through Tarot consultation. Unveil hidden possibilities and make informed decisions with intuitive card readings.
                                     </p>
-                                    <Route2Explore url="/components/exploretarot"></Route2Explore>
-                                    <RedirectButton url="https://calendly.com/devanshwalecha93"></RedirectButton>
+                                    <div className='flex flex-wrap items-center justify-center gap-2'>
+
+                                        <Route2Explore url="/components/exploretarot"></Route2Explore>
+                                        <RedirectButton url="https://calendly.com/devanshwalecha93"></RedirectButton>
+
+                                    </div>
 
                                 </div>
                             </div>
@@ -157,8 +165,10 @@ export default function ConductedEvents() {
                                     <p className="text-gray-600 dark:text-gray-300 mb-2 text-lg">
                                         Restore energy balance with Pranic and Crystal Healing. Experience deep healing, positivity, and well-being through powerful energy techniques.
                                     </p>
-                                    <Route2Explore url="/components/explorepanic"></Route2Explore>
-                                    <RedirectButton url="https://calendly.com/devanshwalecha93"></RedirectButton>
+                                    <div className='flex flex-wrap items-center justify-center gap-2'>
+                                        <Route2Explore url="/components/explorepanic"></Route2Explore>
+                                        <RedirectButton url="https://calendly.com/devanshwalecha93"></RedirectButton>
+                                    </div>
                                 </div>
 
                             </div>
