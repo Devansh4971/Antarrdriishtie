@@ -8,7 +8,7 @@ interface AutoPlayVideoProps {
     height?: string | number;
 }
 
-const AutoPlayVideo: React.FC<AutoPlayVideoProps> = ({ src, poster, width = 1080, height = 500 }) => {
+ export const AutoPlayVideo: React.FC<AutoPlayVideoProps> = ({ src, poster, width = 1080, height = 500 }) => {
     const videoRef = useRef<HTMLVideoElement | null>(null);
     const [isVisible, setIsVisible] = useState(false);
 
@@ -67,4 +67,4 @@ const AutoPlayVideo: React.FC<AutoPlayVideoProps> = ({ src, poster, width = 1080
     );
 };
 
-export default AutoPlayVideo;
+
