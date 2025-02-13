@@ -1,9 +1,7 @@
 
-import AutoPlayVideo from "./components/vid/page";
+import {AutoPlayVideo} from "./components/vid/page";
 import Navbar from "./components/navbar/page";
 import Hero from "./components/hero/page";
-import whatwedo from './components/whatwedo/page';
-import Whatwedo from "./components/whatwedo/page";
 import ConductedEvents from "./components/whatwedo/page";
 import Working from "./components/working/page";
 import StandingOut from "./components/standingout/page";
