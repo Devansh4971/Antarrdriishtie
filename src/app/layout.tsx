@@ -24,10 +24,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        
       >
         {children}
+        <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+        <script src="https://files.bpcontent.cloud/2025/02/14/05/20250214053432-4NQRHO5W.js"></script>
+
       </body>
     </html>
   );

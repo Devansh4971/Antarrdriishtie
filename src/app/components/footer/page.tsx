@@ -1,9 +1,11 @@
 "use client"
 import { useRouter } from "next/navigation";
 import { Facebook, Linkedin, Twitter, Mail, Phone } from 'lucide-react';
+import { use } from "motion/react-m";
 
 export default function Footer() {
     const router = useRouter()
+    const router1=useRouter()
     const routerPricing = useRouter()
     const handlerWhy = function () {
 
@@ -92,6 +94,11 @@ export default function Footer() {
                                 View Our Pricing →
                             </a>
                         </div>
+                    </div>
+                    <div>
+                        <button className="text-white font-bold text-2xl border-x-4 border-y-4 hover:cursor p-2 rounded-md" onClick={(e)=>router1.push("")}>
+                            Give your testimonial
+                        </button>
                     </div>
                 </div>
 
