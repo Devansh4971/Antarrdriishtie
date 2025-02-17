@@ -96,7 +96,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div>
-                        <button className="text-white font-bold text-2xl border-x-4 border-y-4 hover:cursor p-2 rounded-md" onClick={(e)=>router1.push("")}>
+                        <button className="text-white font-bold text-2xl border-x-4 border-y-4 hover:cursor p-2 rounded-md" onClick={(e) => router1.push("https://docs.google.com/forms/d/1sFmmejswBuSCQJ6w5VZtG_Lyc1ifcsa4rNC3qC_Rr2E/edit")}>
                             Give your testimonial
                         </button>
                     </div>

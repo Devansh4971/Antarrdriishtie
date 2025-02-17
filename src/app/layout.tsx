@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import SmoothScroll from "@/components/ui/animation";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,9 +31,11 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         
       >
-        {children}
+        <SmoothScroll>{children}</SmoothScroll>
+
         <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
-        <script src="https://files.bpcontent.cloud/2025/02/14/05/20250214053432-4NQRHO5W.js"></script>
+        <script src="https://files.bpcontent.cloud/2025/02/17/00/20250217004027-4XCM74I9.js"></script>
+
 
       </body>
     </html>

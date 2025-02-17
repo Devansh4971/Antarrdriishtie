@@ -1,22 +1,22 @@
 "use client"
 import { useState } from "react";
 import { Menu, X } from "lucide-react"
-import {useRouter} from "next/navigation"
+import { useRouter } from "next/navigation"
 import Route2Page from "../redirects/redirect";
 import Redirect2Services from "../redirects/redirect-services";
 
 
-export default function Navbar(){
-    const router= useRouter()
-    const router1=useRouter()
-    const pushHome=()=>{
+export default function Navbar() {
+    const router = useRouter()
+    const router1 = useRouter()
+    const pushHome = () => {
         router.push("/")
     }
-    const pushServices=()=>{
+    const pushServices = () => {
         router1.push("/servicesprovided")
     }
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-    return(
+    return (
         <div className="font-inter">
             <div className="font-inter md:hidden">
                 <section className="flex items-center  pl-7 pt-8">
@@ -76,7 +76,7 @@ export default function Navbar(){
                         <Redirect2Services url="/components/servicesprovided"></Redirect2Services>
                     </div>
 
-                    
+
                 </nav>
             </div>
         </div>
