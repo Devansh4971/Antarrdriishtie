@@ -10,7 +10,7 @@ export default function SmoothScroll({ children }: { children: React.ReactNode }
         const handleScroll = () => {
             controls.start({
                 y: -window.scrollY,
-                transition: { type: "tween", ease: "easeOut", duration: 0.6 },
+                transition: { type: "tween", ease: "easeOut", duration: 0.8 },
             });
         };
 
