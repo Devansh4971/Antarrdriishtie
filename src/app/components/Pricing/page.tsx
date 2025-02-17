@@ -25,8 +25,9 @@ export default function pricingMenu(){
                             <h2 className="text-2xl font-bold text-[#234969]">Vastu Consultation</h2>
                             <div className=" pt-12">
                                 <p className="text-[#6B7280] text-xl  leading-relaxed ">
-                                    Enhance your home’s harmony and energy with expert Vastu consultation. <br></br>Get detailed report with griding and remedies <IndianRupee></IndianRupee>11000
+                                    Enhance your home’s harmony and energy with expert Vastu consultation. <br></br>Get detailed report with griding and remedies. 
                                 </p>
+                                
                             </div>
                         </CardHeader>
                         <CardContent className="flex-grow flex flex-col justify-end p-0 mt-12">
@@ -44,8 +45,8 @@ export default function pricingMenu(){
                             <div className=" pt-12">
                                 <p className="text-[#6B7280] text-xl leading-relaxed ">
                                     Discover life’s path with expert Jyotish guidance. <br></br>
-                                    Breif chart study with 1 or 2 Ques - <IndianRupee></IndianRupee>1100<br></br>
-                                    Detailed chart study - <IndianRupee></IndianRupee>5100
+                                    Breif chart study with 1 or 2 Ques - Rs 1100
+                                    Detailed chart study - Rs 5100
                                 </p>
                             </div>
                         </CardHeader>
@@ -85,13 +86,13 @@ export default function pricingMenu(){
                             <div className=" pt-14">
                                 <p className="text-[#6B7280] text-xl leading-relaxed ">
                                     Find clarity and direction with Tarot counselling. 
-                                    Brief consultation session - <IndianRupee></IndianRupee>501
-                                    Detailed consultation session - <IndianRupee></IndianRupee>1101
+                                    Brief consultation session - Rs 501
+                                    Detailed consultation session - Rs 1101
                                 </p>
                             </div>
                         </CardHeader>
                         <CardContent className="flex-grow flex flex-col justify-end p-0 mt-12">
-                            <h3 className="text-3xl font-bold text-[#234969] mb-6">Rs 9999</h3>
+                            <h3 className="text-3xl font-bold text-[#234969] mb-6">Rs 1101</h3>
                             <button className="w-full rounded-md bg-white text-[#234969] border border-[#234969] hover:bg-[#0b3558] hover:text-white font-semibold py-6"
 
                                 onClick={(e) => { handleMeeting() }}>

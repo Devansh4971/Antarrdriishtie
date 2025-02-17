@@ -1,84 +1,54 @@
 "use client"
-import { useState } from "react";
-import { Menu, X } from "lucide-react"
-import { useRouter } from "next/navigation"
-import Route2Page from "../redirects/redirect";
-import Redirect2Services from "../redirects/redirect-services";
+import { Bot as  Menu } from 'lucide-react';
+import { useRouter } from 'next/navigation';
+import { useState } from 'react';
 
 
 export default function Navbar() {
-    const router = useRouter()
-    const router1 = useRouter()
-    const pushHome = () => {
-        router.push("/")
-    }
-    const pushServices = () => {
-        router1.push("/servicesprovided")
-    }
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const Router=useRouter()
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     return (
-        <div className="font-inter">
-            <div className="font-inter md:hidden">
-                <section className="flex items-center  pl-7 pt-8">
-                    <section>
-                        <img src="/logo.jpg" alt="logo" className="w-[4rem] rounded-sm  h-[4rem]" onClick={pushHome} />
-                    </section>
-
-                    <section className="ml-[7.5rem]">
-                        <Redirect2Services url="/components/servicesprovided"></Redirect2Services>
-                    </section>
-
-                    <section className="flex items-center md:hidden">
-                        <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className=" animate-smooth p-2 pl-[1rem] rounded-md  dark:hover:bg-gray-200">
-                            {mobileMenuOpen ? <X className="h-8 w-10 "></X> : <Menu className="h-8 bg-black-400 w-10"></Menu>}
-                        </button>
-
-
-                    </section>
-                    {
-                        mobileMenuOpen && (
-                            <div className="absolute mt-[9.5rem] space-x-3
-                          min-h-[10rem] font-inter font-bold items-center justify-center  w-screen   flex ">
-                                <div className="block text-xl text-[#234969] hover:text-blue-500">
-                                    <Route2Page url="/components/aboutus" label="About us" />
-                                </div>
-                                <div className="block text-xl  hover:text-blue-500 text-[#234969]">
-                                    <Route2Page url="/components/servicesprovided" label="Services " />
-                                </div>
-                                <div className="block text-xl  hover:text-blue-500 text-[#234969]">
-                                    <Route2Page url="/components/Pricing" label="Pricing" />
-                                </div>
-                                <div className="block text-xl  hover:text-blue-500 text-[#234969]">
-                                    <Route2Page url="/components/testimonials" label="Testimonials" />
-                                </div>
-
-
-                            </div>
-                        )
-                    }
-                </section>
-
-
-            </div>
-            <div className="flex h-[5rem] max-sm:hidden hover:cursor relative ml-[10rem] mt-[5rem]">
-                <nav className="flex items-center">
-                    <img
-                        src="/logo.jpg"
-                        className=" h-[100px] w-[100px]  rounded-md cursor-pointer 
-                                         "
-                        onClick={pushHome}
-                    ></img>
-                    <div className=" flex  ml-[8.52rem] items-center space-x-[7.5rem]   text-sm font-medium text-[#0b3558] mt-4   md:text-lg">
-                        <Route2Page url="/components/aboutus" label="About Us"></Route2Page>
-                        <Route2Page url="/components/servicesprovided" label="Services"></Route2Page>
-                        <Route2Page url="/components/Pricing" label="Pricing"></Route2Page>
-                        <Route2Page url="/components/testimonials" label="Testimonials"></Route2Page>
-                        <Redirect2Services url="/components/servicesprovided"></Redirect2Services>
+        <nav className="fixed font-inter top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex mt-5 justify-between items-center h-16">
+                    <div className="flex items-center">
+                     <img src='/logo.jpg' className="h-[5rem] w-[5rem]" onClick={(e)=>Router.push("/")}></img>
                     </div>
 
+                    <div className="hidden md:flex items-center font-bold text-xl space-x-8">
+                        <a href="/components/aboutus" className="text-gray-700 hover:text-blue-700 transition-colors">About Us</a>
+                        <a href="/components/servicesprovided" className="text-gray-700 hover:text-blue-700 transition-colors">Services</a>
+                        <a href="/components/Pricing" className="text-gray-700 hover:text-blue-700 transition-colors">Pricing</a>
+                        <a href="/components/testimonials" className="text-gray-700 hover:text-blue-700transition-colors">Testimonials</a>
+                        <button onClick={(e)=>Router.push("/components/servicesprovided")} className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors">
+                            Get Started
+                        </button>
+                    </div>
 
-                </nav>
+                    <button
+                        className="md:hidden"
+                        onClick={() => setIsMenuOpen(!isMenuOpen)}
+                    >
+                        <Menu className="h-6 w-6 text-gray-700" />
+                    </button>
+                </div>
             </div>
-        </div>
-    )
+
+            {/* Mobile menu */}
+            {isMenuOpen && (
+                <div className="md:hidden">
+                    <div className="px-2 pt-2 pb-3 space-y-1">
+                        <a href="/components/aboutus" className="block px-3 py-2 text-gray-700 hover:text-blue-700 transition-colors">About Us</a>
+                        <a href="/components/servicesprovided" className="block px-3 py-2 text-gray-700 hover:text-blue-700 transition-colors">Services</a>
+                        <a href="/components/Pricing" className="block px-3 py-2 text-gray-700 hover:text-blue-700 transition-colors">Pricing</a>
+                        <a href="/components/testimonials" className="block px-3 py-2 text-gray-700 hover:text-blue-700 transition-colors">Testimonials</a>
+                        <button onClick={(e) => Router.push("/components/servicesprovided")} className="w-full mt-2 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            )}
+        </nav>
+    );
 }

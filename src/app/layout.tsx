@@ -31,10 +31,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         
       >
-        <SmoothScroll>{children}</SmoothScroll>
+        {children}
 
         <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
-        <script src="https://files.bpcontent.cloud/2025/02/17/00/20250217004027-4XCM74I9.js"></script>
+        <script src="https://files.bpcontent.cloud/2025/02/17/00/20250217004027-4XCM74I9.js"></script>  
 
 
       </body>

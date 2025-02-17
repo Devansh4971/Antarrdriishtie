@@ -1,5 +1,5 @@
 
-import AutoPlayVideo from "./components/vid/AutoPlayVideo";
+
 import Navbar from "./components/navbar/page";
 import Hero from "./components/hero/page";
 import ConductedEvents from "./components/whatwedo/page";
@@ -17,10 +17,7 @@ export default function Home() {
       <section>
         <Hero></Hero>
       </section>
-      <section className="">
-        <AutoPlayVideo  src="/test-vid.mp4"></AutoPlayVideo>
-      </section>
-      
+     
       <section>
         <ConductedEvents></ConductedEvents>
       </section>
