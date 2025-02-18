@@ -1,49 +1,68 @@
-"use client"
+import React from 'react';
 
+function Hero() {
+  const handleGetStarted = () => {
+    // Router navigation will be handled here
+    console.log('Navigate to services');
+  };
 
-import { useRouter } from "next/navigation"
-export default function  Hero(){
-    const router=useRouter()
-    return(
-        <main className="font-inter">
-            <div className="font-inter mt-[3.5rem] md:hidden">
-                <section >
-                    <section className=" font-bold  mt-[2rem] flex items-center justify-center text-[#0b3558] text-[3rem]">Antarrdrishtie</section>
-                    <section className="font-semibold mt-[.5rem] flex items-center justify-center text-[#0b3558] text-[1.65rem]">Mapping Your Spiritual Destiny</section>
+  return (
+    <main className="font-inter min-h-screen">
+      {/* Mobile and Tablet View (up to md breakpoint) */}
+      <div className="px-4 pt-14 md:hidden">
+        <div className="text-center">
+          <h1 className="text-[2rem] sm:text-[2.5rem] font-bold text-[#0b3558] mb-2">
+            Antarrdrishtie
+          </h1>
+          <h2 className="text-[1.25rem] sm:text-[1.5rem] font-semibold text-[#0b3558] mb-3">
+            Mapping Your Spiritual Destiny
+          </h2>
+          <div className="text-[#476788] text-[1rem] sm:text-[1.1rem] space-y-1">
+            <p>Decode the wisdom of the cosmos and</p>
+            <p>uncover what's written in your stars.</p>
+          </div>
+        </div>
+        <div className="mt-8 flex justify-center">
+          <button
+            onClick={handleGetStarted}
+            className="w-full sm:w-[21.25rem] h-12 text-white text-[1.1rem] rounded-lg bg-[#006bff] font-bold hover:bg-[#0055cc] transition-colors"
+          >
+            Choose Your Service
+          </button>
+        </div>
+      </div>
 
-                    < section className="font-normal leading-5  mt-[.3rem] pl-[2rem] pr-[2rem]  text-[#476788] text-[1.1rem] m-auto"><p className="ml-[0.75rem]">Decode the wisdom of the cosmos and</p> <p className="ml-[1.35rem]">uncover what’s written in your stars.</p></section>
-                </section>
-
-                <section className="flex items-center justify-center mt-[2.5rem]">
-                    <button className=" text-white w-[21.25rem] h-[3rem] text-[1.1rem] rounded-[8px] flex justify-center font-inter font-bold bg-[#006bff] items-center " onClick={(e) => { router.push("/components/servicesprovided") }}>Choose Your Service</button>
-                </section>
-
+      {/* Desktop View (md and above) */}
+      <div className="hidden md:block px-6 lg:px-12 py-16">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center">
+            <h1 className="text-[2.75rem] lg:text-[3.75rem] font-bold text-[#234969] tracking-[0.015em] mb-4">
+              Antarrdriishtie
+            </h1>
+            <h2 className="text-[2.5rem] lg:text-[3.75rem] font-bold text-[#234969] tracking-[0.015em] mb-6">
+              Mapping Your Spiritual Destiny
+            </h2>
+            <div className="space-y-2 text-[#6c86a0] max-w-3xl mx-auto">
+              <p className="text-lg">
+                Antarrdriishtie bridges centuries of Vedic wisdom with contemporary needs.
+              </p>
+              <p className="text-lg">
+                Let our experienced consultants guide you in creating harmony across all aspects of your life using time-honored practices.
+              </p>
             </div>
-            <div className="h-[300px] w-full mb-[20rem] mt-2 flex items-center justify-center max-sm:hidden">
-                <div>
-                    <div className="xs:flex xs:items-center xs:justify-center">
-                        <p className="text-[3.75rem] xs:text-[2.75rem ]  font-bold text-[#234969] ml-[15rem] mt-[17.5rem] tracking-[0.015em]">Antarrdriishtie</p>
-                    </div>
-                    <div className="xs:ml-[15rem] xs:wrap">
-                        <p className="text-[3.75rem] max-sm:ml-[2.5rem] max-sm:text-[2.75rem] font-bold text-[#234969] mt-[14px] tracking-[0.015em]">Mapping Your Spiritual Destiny</p>
-                    </div>
-
-                    <p className="ml-[10.5rem] mt-[1.25rem] text-[#6c86a0]">Antarrdriishtie bridges centuries of Vedic wisdom with contemporary needs.</p>
-
-                    <p className=" text-[#6c86a0]">  Let our experienced consultants guide you in creating harmony across all aspects of your life using time-honored practices.</p>
-                    <div className="mt-[2.5rem] items-center justify-center flex">
-                        <button
-                            onClick={(e) => router.push("/components/serviceprovided")}
-                            className={`
-                      w-[25rem]   flex items-center justify-center  px-6  py-3  text-white font-bold bg-[#003B6D] hover:bg-[#00325C] rounded-md        transition-colors duration-200 
-                    `}
-                        >
-                            Get Started
-                        </button>
-                    </div>
-                </div>
+            <div className="mt-10 flex justify-center">
+              <button
+                onClick={handleGetStarted}
+                className="w-[25rem] py-3 text-white text-xl font-bold bg-[#003B6D] hover:bg-[#00325C] rounded-md transition-colors duration-200"
+              >
+                Get Started
+              </button>
             </div>
-        </main>
-        
-    )
+          </div>
+        </div>
+      </div>
+    </main>
+  );
 }
+
+export default Hero;

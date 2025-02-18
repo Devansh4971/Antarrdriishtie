@@ -45,9 +45,11 @@ export default function ConductedEvents() {
                     <section className='py-12 font-inter'>
 
                         <div className="container mx-auto px-6 py-6">
-                            <h2 className="text-3xl font-bold text-[#234969] ml-[5rem] mb-[2.5rem] tracking-[0.015em]">
-                                What we do
-                            </h2>
+                            <div className='items-center justify-center flex '>
+                                <h2 className="text-3xl font-bold text-[#234969]  mb-[2.5rem] tracking-[0.015em]">
+                                    What we do
+                                </h2>
+                            </div>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                                 <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl duration-300 ease-in-out">
                                     <Image

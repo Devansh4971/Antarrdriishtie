@@ -1,5 +1,5 @@
 "use client"
-import { Bot as  Menu } from 'lucide-react';
+import {   Menu } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
